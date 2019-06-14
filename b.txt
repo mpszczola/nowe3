@@ -1,0 +1,31 @@
+http://blog.atena.pl/android-howto-jak-wyslac-powiadomienie
+
+https://code.tutsplus.com/tutorials/android-from-scratch-connecting-activities-and-applications--cms-26582
+
+https://code.tutsplus.com/tutorials/android-o-how-to-use-notification-channels--cms-28616
+
+http://www.java2s.com/Code/Android/UI/ToastandNotificationvibrateandsound.htm?fbclid=IwAR0TOQcBDcLIZWMpYLjtfuqNf8M-GHaz_TZq8FTGntZeNl0PhzedfosKjMQ
+
+https://www.tutorialspoint.com/android/android_notifications.htm
+
+http://www.tomaszx.pl/materialy/pum_wyk15.pdf
+
+Może napiszę jakie były zmiany w OCR,
+żeby to później nie uciekło, a ostatnio zapomniałam napisać.
+Zmiany są w AndroidManifest.xml,
+build.gradle
+MainActivity
+nowa klasa : PhotoPlusOcrUtil
+Dodanie taska z rozpoznanym tekstem napisałam
+u dołu w pliku MainActivity.
+Niestety jakość odczytu druku jest nie najlepsza, no
+ale taka to jest biblioteka, czyli jeśli fotografowany tekst nie
+będzie odpowiednio ostry i drukowany, to w tasku będą same krzaki.
+Żeby dodało tekst trzeba klikąć na Home, żeby się odświeżyło.
+OCR działa na wersji 25 i wyżej.
+Rezultatem działania OCR, po zrobieniu zdjęcia jest zmienna tekstowa
+zawierająca już cyfrowy tekst.
+Ta zmienna tekstowa jest w pliku MainActivity
+i wygląda tak :                 String text = mTess.getUTF8Text();
+
+
